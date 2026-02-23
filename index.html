@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropic 23 | Eidos Pharmaceuticals</title>
+    <meta name="description"
+        content="Tropic 23 Premium Hair Care by Eidos Pharmaceuticals. Advanced scalp science meets botanical care with Rosemary and Caffeine.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --header-font: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar glass-card">
+            <div class="logo">
+                <a href="#tropic-hero" id="logo-link">
+                    <img src="edios_logo.png" alt="Eidos Pharmaceuticals Logo" id="navbar-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#tropic-hero">Tropic 23</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#product-gallery">Products</a></li>
+                <li><a href="#corporate-gateway">Corporate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Tropic 23 Hero -->
+        <section id="tropic-hero" class="hero-section">
+            <div class="split-container">
+                <div class="text-side">
+                    <h1 class="accent-text fade-in">Tropic 23</h1>
+                    <h2 class="fade-in delay-1">Advanced scalp science meets botanical care.</h2>
+                    <p class="fade-in delay-2">Infused with Rosemary & Caffeine. Suitable for all hair types.</p>
+                    <div class="bio-tags fade-in delay-2">
+                        <span>Healthy Scalp</span> | <span>Stronger Hair</span> | <span>Daily Nourishment</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Brand Introduction (Welcome to Tropic 23) -->
+        <section id="brand-intro" class="reveal-section">
+            <div class="intro-split-layout">
+                <div class="product-reveal-side">
+                    <div class="reveal-image-wrapper">
+                        <img src="tropic23_300ml Background Removed.png" alt="Tropic 23 Bottle" id="reveal-bottle">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+                <div class="text-reveal-side">
+                    <div class="intro-eyebrow"><span class="eyebrow-line"></span>The Science of Nature</div>
+                    <h2 class="reveal-title">Welcome to <span class="accent-text">Tropic 23.</span></h2>
+                    <div class="reveal-divider"></div>
+                    <div class="brand-content">
+                        <p class="brand-text">
+                            Developed at the intersection of <strong>advanced scalp science</strong> and pure botanical
+                            care.
+                            Our core mission is to strengthen hair from the roots up.
+                        </p>
+                        <div class="feature-pills">
+                            <div class="pill"><span>Rosemary Extract</span></div>
+                            <div class="pill"><span>High-Potency Caffeine</span></div>
+                            <div class="pill"><span>Biotic Nourishment</span></div>
+                        </div>
+                        <p class="brand-text secondary">
+                            Crafted for all hair types, Tropic 23 combines science-backed ingredients with gentle care
+                            to
+                            promote everyday resilience and shine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative botanical shadows -->
+            <div class="botanical-shadow leaf-1"></div>
+            <div class="botanical-shadow leaf-2"></div>
+        </section>
+
+        <!-- Section 3: About Us, Mission & Vision -->
+        <section id="about-us" class="science-section">
+            <div class="about-grid">
+                <div class="science-card fade-in">
+                    <div class="science-copy">
+                        <h3>About Us</h3>
+                        <p>Eidos Pharmaceuticals Pvt. Ltd. is built on a foundation of scientific expertise, ethical
+                            responsibility, and a patient-centric approach. Our organization strives to bridge the gap
+                            between medical innovation and accessibility by offering formulations that meet stringent
+                            quality and safety benchmarks.</p>
+                    </div>
+                </div>
+                <div class="mv-grid">
+                    <div class="science-card fade-in delay-1">
+                        <div class="science-copy">
+                            <h3>Our Mission</h3>
+                            <p>To provide safe, effective, and affordable pharmaceutical products that enhance the
+                                quality of life.</p>
+                        </div>
+                    </div>
+                    <div class="science-card fade-in delay-2">
+                        <div class="science-copy">
+                            <h3>Our Vision</h3>
+                            <p>To become a trusted and globally recognized pharmaceutical company known for integrity,
+                                innovation, and quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Product Gallery (The Collection) -->
+        <section id="product-gallery" class="gallery-section">
+            <h2 class="section-title">The Collection</h2>
+            <div class="product-grid-landscape">
+                <div class="product-item" onclick="openDetail('shampoo-300')">
+                    <div class="product-img-wrapper">
+                        <img src="assets/tropic23_300ml.png" alt="Strengthening Shampoo">
+                    </div>
+                    <div class="product-info">
+                        <h4>Strengthening Shampoo</h4>
+                        <p>300ml | Restorative Care</p>
+                    </div>
+                </div>
+                <div class="product-item" onclick="openDetail('masque')">
+                    <div class="product-img-wrapper">
+                        <img src="assets/tropic23_masque.png" alt="Hair Repair Masque">
+                    </div>
+                    <div class="product-info">
+                        <h4>Hair Repair Masque</h4>
+                        <p>Nourishing Deep Condition</p>
+                    </div>
+                </div>
+                <div class="product-item" onclick="openDetail('shampoo-100')">
+                    <div class="product-img-wrapper">
+                        <img src="assets/tropic23_100ml.png" alt="Travel Shampoo">
+                    </div>
+                    <div class="product-info">
+                        <h4>Travel Shampoo</h4>
+                        <p>100ml | Strengthening on the go</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Corporate Gateway (Eidos Pharmaceuticals) -->
+        <section id="corporate-gateway" class="corporate-section">
+            <div class="corporate-bg-parallax">
+                <img src="assets/corporate_bg.png" alt="Corporate Background" class="bg-img">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="corporate-container">
+                <div class="corporate-glass-card">
+                    <div class="card-left">
+                        <img src="edios_logo.png" alt="Eidos Logo" class="corporate-logo-large">
+                    </div>
+                    <div class="card-right">
+                        <h2 class="corporate-title">Eidos Pharmaceuticals Pvt. Ltd.</h2>
+                        <p class="corporate-tagline">Quality. Integrity. Innovation.</p>
+                        <div class="corporate-divider"></div>
+                        <p class="corporate-description">
+                            A professionally managed organization dedicated to delivering high-quality, safe, and
+                            affordable
+                            healthcare solutions through rigorous research and global quality standards.
+                        </p>
+                        <div class="corporate-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">Global</span>
+                                <span class="stat-label">Standards</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">Trusted</span>
+                                <span class="stat-label">By Experts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail Modal -->
+        <div id="product-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h3>Eidos Pharmaceuticals Pvt. Ltd.</h3>
+                <p>Advancing Healthcare with Quality, Integrity, and Innovation.</p>
+                <div class="social-links">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"
+                            class="social-icon"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook"
+                            class="social-icon"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#tropic-hero">Tropic 23</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#product-gallery">The Collection</a></li>
+                    <li><a href="#corporate-gateway">Corporate</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@eidospharma.com</p>
+                <p>Phone: +91 123 456 7890</p>
+                <p>Address: Industrial Area, Phase-I, New Delhi, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Eidos Pharmaceuticals Pvt. Ltd. | Tropic 23 Premium Hair Care
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
