@@ -29,8 +29,8 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--bg-color);
-    scroll-padding-top: 0;
-    /* Let section padding handle the gap */
+    scroll-padding-top: 100px;
+    /* Increased offset for higher landing */
 }
 
 body {
@@ -153,24 +153,23 @@ section {
 
 /* 2. Brand Introduction Restyle */
 .reveal-section {
-    background: var(--bg-color);
-    padding: 10rem 10% 15rem;
+    background: #000;
+    padding: 8rem 10% 4rem;
+    /* Tightened bottom gap */
     position: relative;
     overflow: hidden;
-    margin-bottom: -1px;
-    /* Overlap to prevent sub-pixel gaps */
 }
 
-/* Seamless Bottom Gradient - Fading into the next section's amber aura */
+/* Seamless Bottom Gradient - Fading to pure black to meet the next section */
 .reveal-section::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 40vh;
-    background: linear-gradient(to bottom, transparent, var(--bg-color));
-    z-index: 4;
+    height: 15vh;
+    background: linear-gradient(to bottom, transparent, #000);
+    z-index: 5;
     pointer-events: none;
 }
 
@@ -337,7 +336,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--bg-color);
+    background: #000;
 }
 
 /* Seamless Transition Gradient */
@@ -348,7 +347,7 @@ section {
     left: 0;
     width: 100%;
     height: 30vh;
-    background: linear-gradient(to bottom, var(--bg-color), transparent);
+    background: linear-gradient(to bottom, #000, transparent);
     z-index: 5;
     /* Higher than background but lower than content */
     pointer-events: none;
@@ -377,7 +376,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, var(--bg-color) 90%);
+    background: radial-gradient(circle at center, transparent 0%, #000 90%);
 }
 
 .corporate-container {
@@ -475,12 +474,26 @@ section {
 
 /* 4. About Us & Science Section - Premium Redesign */
 .science-section {
-    background: radial-gradient(circle at 50% 0%, rgba(212, 163, 115, 0.1) 0%, var(--bg-color) 80%);
-    padding: 12rem 10% 2rem;
+    background: #000;
+    padding: 4rem 10% 0;
+    /* Tightened top gap */
     position: relative;
     overflow: hidden;
-    margin-top: -1px;
-    /* Overlap to prevent sub-pixel gaps */
+}
+
+/* Subtle top glow with a black header to ensure seamlessness */
+.science-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(to bottom, #000 0%, transparent 20%),
+        radial-gradient(circle at 50% 15%, rgba(212, 163, 115, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .about-container {
@@ -571,11 +584,12 @@ section {
     opacity: 1;
 }
 
+/* Aesthetic Vertical Connector */
 .section-connector-wrapper {
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
-    /* Reduced padding */
+    padding: 4rem 0;
+    /* Increased gap for better hierarchy */
 }
 
 .section-connector {
@@ -583,7 +597,8 @@ section {
     height: 100px;
     /* Reduced height */
     background: linear-gradient(to bottom, transparent, var(--accent-color), transparent);
-    opacity: 0.4;
+    opacity: 0.8;
+    /* Increased intensity */
     position: relative;
 }
 
@@ -597,7 +612,8 @@ section {
     height: 6px;
     border-radius: 50%;
     background: var(--accent-color);
-    box-shadow: 0 0 10px var(--accent-color);
+    box-shadow: 0 0 15px 2px var(--accent-color);
+    /* Stronger glow */
 }
 
 /* Layout Utilities */
@@ -699,9 +715,9 @@ section {
 
 /* Product Section Specifics */
 .gallery-section {
-    background: var(--bg-color);
-    padding: 2rem 10% 8rem;
-    /* Reduced top padding for tighter connector landing */
+    background: #000;
+    padding: 0 10% 8rem;
+    /* No top padding, connector handles the transition */
 }
 
 .section-title {

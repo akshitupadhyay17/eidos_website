@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const navbarHeight = 0; // Removed offset to allow section padding to control the look
+                const navbarHeight = 100; // Increased offset for higher landing
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
 
